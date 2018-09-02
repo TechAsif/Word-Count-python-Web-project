@@ -4,6 +4,10 @@
 	<title>This is html page </title>
 </head>
 <body>
-	hello world I am html page 
+	<form action="{% url 'count' %}">
+		
+		<textarea rows="4" cols="50" name="fullname"></textarea>	
+		<input type="submit"  value="count">
+	</form>
 </body>
 </html>

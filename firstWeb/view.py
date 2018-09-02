@@ -6,6 +6,8 @@ def home(request):
 
 	return render(request,'index.html')
 
-def blog(request):
+def count(request):
 
-	return HttpResponse('<h1>This is blog page </h1>')
+	fullname = request.GET['fullname']
+	print(fullname)
+	return render(request,'count.html',{'fullname':fullname})

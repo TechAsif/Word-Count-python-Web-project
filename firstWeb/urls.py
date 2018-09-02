@@ -19,6 +19,6 @@ from . import view
 
 urlpatterns = [
 	path('',view.home),
-	path('blog/',view.blog)
+	path('count/',view.count,name='count')
 
 ]
