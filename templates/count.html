@@ -4,7 +4,23 @@
 	<title></title>
 </head>
 <body>
-	<h1>This is count page</h1>
+	<h1>The number of word in this list is {{  count  }}</h1>
+
+	
+
+	
+
+	<h2>number of repeated a word </h2>
+
+	{%  for word,countnumber in worddictionarys  %}
+
+	{{ word }} - {{ countnumber }}
+	<br>
+	
+
+	{% endfor %}
+
+	<h2>The word you inserted is </h2>
 	{{ fullname }}
 
 </body>
